@@ -1,96 +1,90 @@
-<style>
-#pic1{position:absolute; }
+<!doctype html>
+<html>
 
-moving {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  position: relative;
-  -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
-  animation: myfirst 5s linear 2s infinite alternate;
-}
+<!--Webpage created using templates from Yen-Chia Hsu http://yenchiah.me/project-website-template/-->
 
+<head>
+  <title>Samuel Rhys Cox</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes myfirst {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
+<body>
+  <div class="menu-container">
+    <div class="menu">
+      <div class="menu-table flex-row-space-between">
+        <div class="logo flex-row-center">
+          <a href="index.html">Samuel Rhys Cox</a>
+        </div>
+        <a class="menu-button" tabindex="0" href="javascript:void(0)">
+          <img src="img/menu.png">
+        </a>
+        <div class="menu-items flex-row-center flex-item">
+          <a href="https://scholar.google.com.sg/citations?user=qVb-79UAAAAJ&hl=en" class="menu-embedding">Google Scholar</a>
+          <a href="https://twitter.com/SamuelRhysCox" class="menu-embedding">Twitter</a>
+          <a href="https://github.com/SamuCox">GitHub</a>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text around Image-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">About Me</h2>
+            <hr>
+            <p class="text">
+              <img class="image image-wrap-text max-width-140" src="img/my-photo.png" width="100">
+              Hi! I'm Samuel Rhys Cox, a computer science PhD student at the National University of Singapore. My primary supervisor is <a href="https://www.comp.nus.edu.sg/~ooiwt/index.html">Prof. Wei Tsang Ooi</a> and my co-supervisor is <a href="https://www.brianlim.net/">Prof. Brian Y. Lim</a>.
+              <br>
+              <br>
+              I am interested in human computer interaction (HCI), healthcare technology, crowdsourcing, and conversational agents.
+              <br>
+              <br>
+              I received my BSc. (Hons) in Mathematics from the University of Portsmouth, and MSc. Computing Science from Imperial College London.
+            </p>
+          </div>
+        </div>
+        <!--End Text around Image-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Publications</h2>
+            <hr>
+            <p class="text">
+              <b>Samuel Rhys Cox</b>, Yunlong Wang, Ashraf Abdul, Christian von der Weth, and Brian Y. Lim. "Directed Diversity: Leveraging Language Embedding Distances for Collective Creativity in Crowd Ideation." In <i>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</i> (2021).
+              <br>
+              <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210106030R/abstract">Full paper</a>
+            </p>
+            <p class="text">
+              Ding Dan, Oleksandra Poquet, Joseph Jay Williams, Radhika Nikam, and <b>Samuel Rhys Cox</b>. "Increasing Response Rates to Email Surveys in MOOCs." In <i>Adjunct Publication of the 26th Conference on User Modeling, Adaptation and Personalization</i> (2018).
+              <br>
+              <a href="https://dl.acm.org/doi/abs/10.1145/3213586.3225247?casa_token=fmnOjE-YXHEAAAAA%3A3wN7Q8d-4-Y9ykB9ovM4gY10B4lIbQqM8_Fz86UB3ui0A19-YUKj0JKkWih50qdr7aSLeQOl3VRt-gY">Full paper</a>
+            </p>
+          </div>
+        </div>
+        <!--End Text Only-->
+        <!-------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+  </div>
+</body>
 
-/* Standard syntax */
-@keyframes myfirst {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
-
-      blink {
-        animation: blinker 0.6s linear infinite;
-        color: #1c87c9;
-       }
-      @keyframes blinker {  
-        50% { opacity: 0; }
-       }
-       .blink-one {
-         animation: blinker-one 1s linear infinite;
-       }
-       @keyframes blinker-one {  
-         0% { opacity: 0; }
-       }
-       .blink-two {
-         animation: blinker-two 1.4s linear infinite;
-       }
-       @keyframes blinker-two {  
-         100% { opacity: 0; }
-       }
-</style>
-
-<script>
-//Copyright 2001 Chase Cathcart. Please leave this in here.
-function trackit(){
-document.all.pic1.style.left = event.x
-document.all.pic1.style.top = event.y
-if(event.x < "0"){
-document.all.pic1.style.left = "0"
-}
-}
-document.onmousemove = trackit
-</script>
-
-<img src="https://media.giphy.com/media/l2JIm1br3jqUbKPVC/giphy.gif" id="pic1" width="60">
-
-
-<span style='font-weight:bold;font-family:"Comic Sans MS";font-size:35px;'><span style='color:#0DCFFF;'>H</span><span style='color:#10CDFE;'>E</span><span style='color:#14CCFE;'>L</span><span style='color:#18CBFE;'>L</span><span style='color:#1CCAFE;'>O</span> <span style='color:#24C7FE;'>T</span><span style='color:#28C6FE;'>H</span><span style='color:#2CC5FE;'>E</span><span style='color:#30C3FE;'>R</span><span style='color:#34C2FE;'>E</span> <span style='color:#3BC0FE;'>W</span><span style='color:#3FBEFE;'>E</span><span style='color:#43BDFE;'>L</span><span style='color:#47BCFE;'>C</span><span style='color:#4BBBFD;'>O</span><span style='color:#4FB9FD;'>M</span><span style='color:#53B8FD;'>E</span> <span style='color:#5BB6FD;'>T</span><span style='color:#5EB4FD;'>O</span> <span style='color:#66B2FD;'>T</span><span style='color:#6AB1FD;'>H</span><span style='color:#6EAFFD;'>E</span> <span style='color:#76ADFD;'>B</span><span style='color:#7AACFD;'>E</span><span style='color:#7EAAFD;'>S</span><span style='color:#82A9FD;'>T</span> <span style='color:#89A7FC;'>W</span><span style='color:#8DA6FC;'>E</span><span style='color:#91A4FC;'>B</span><span style='color:#95A3FC;'>S</span><span style='color:#99A2FC;'>I</span><span style='color:#9DA1FC;'>T</span><span style='color:#A19FFC;'>E</span> <span style='color:#A99DFC;'>I</span><span style='color:#AD9CFC;'>N</span> <span style='color:#B499FC;'>T</span><span style='color:#B898FC;'>H</span><span style='color:#BC97FC;'>E</span> <span style='color:#C494FB;'>W</span><span style='color:#C893FB;'>O</span><span style='color:#CC92FB;'>R</span><span style='color:#D090FB;'>L</span><span style='color:#D48FFB;'>D</span> <span style='color:#DB8DFB;'>I</span><span style='color:#DF8BFB;'>N</span> <span style='color:#E789FB;'>2</span><span style='color:#EB88FB;'>0</span><span style='color:#EF86FB;'>2</span><span style='color:#F385FB;'>0</span><span style='color:#F784FB;'>.</span><span style='color:#FB83FB;'>
-</span></span>
-
-<h2>Ahhhhhhhhhhhhhhhhh.....</h2>
-<h3>Eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee!!!.......</h3>
-<h4>Uhhhhhh.......</h4>
-<p>Hey &#128522</p>
-
-
-<moving><blink>HELLO SAMMMY WAMMY THANK YOU FOR TEACHING ME THE WAYS OF THE CODING MASTERS</blink></moving>
-
-<marquee
-	direction="left"
-	loop="7"
-	>
-Grace is a coding GENIUSS!!!!!!!       SO MUCH HUMILITY!!! ...........................................................      ALSO SEE YOU TOMORROW xx
-</marquee>
-
-
-<iframe width="0" height="0" src="https://www.youtube.com/embed/7anGdjnklEo?start=27&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<style>
-body {
-  background-image: url('https://media1.giphy.com/media/6Ef2LVNptbe9kTjs1W/giphy.gif?cid=3640f6095c95c563326752316bfde721" alt=');
-}
-
-
-<!-- <p><img src="https://i.imgflip.com/1y3kre.jpg" alt="" width="817" height="960" /></p> -->
+</html>
